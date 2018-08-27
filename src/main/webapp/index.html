@@ -1,0 +1,72 @@
+<html>
+    <script src="myBaller.js">
+    </script>
+    <head>
+        <title> MyBaller </title>
+        <link href = "myBaller.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        
+        <div id="title">
+        <h3 class="top"> MyBaller </h3>
+        </div>
+        <div id="menu" class="top">
+            <ul>
+                <li><a id="links" href = "homepage.html"> Home </a></li>
+                <li><a id="links" href = "lessons.html"> Lessons </a></li>
+                <li><a id="links" href = "local.html"> Local Court </a></li>
+                <li><a id="links" href = "login.html"> Login </a></li>
+            </ul>
+        </div>
+
+        <div id="show">
+            <img class="mySlides" src="bg.jpg" style="width:100%">
+            <img class="mySlides" src="one.JPG" style="width:100%">
+            <img class="mySlides" src="two.jpg" style="width:100%">
+        </div>
+        <div id="buttons">
+            <i class="fas fa-chevron-left"onclick="plusDivs(-1)" id="buttonL"></i>
+            <i class="fas fa-chevron-right"onclick="plusDivs(+1)" id="buttonR"></i>
+        </div>
+
+
+        <div id="options">
+            <a href="signup.html">
+            <div id="option">    
+                <i class="fas fa-user-alt"></i>
+                <p> SignUp </p>
+            </div>
+            </a>
+
+            <a href="lessons.html">
+            <div id="option">
+                <i class="fas fa-basketball-ball"></i>
+                <p> Start </p>
+            </div>
+            </a>
+        </div>
+    </body>
+    <script>
+
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+    showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+    }
+    </script>
+</html>

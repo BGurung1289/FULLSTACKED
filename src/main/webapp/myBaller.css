@@ -1,0 +1,227 @@
+body{
+    font-family: "Arial Black", Gadget, sans-serif​;
+    text-align: center;
+    background-color:floralwhite;
+}
+#title{
+    text-align:left;
+    font-family:sans-serif;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;   
+}
+
+#title:hover{
+    color: orange;
+}
+
+
+#bg{
+    opacity: 0.4;
+    width: 100%;
+    position: absolute;
+    left: 1px;
+}
+
+#menu ul li{
+    text-decoration: none;
+    display: inline;
+    padding: 100px;
+}
+
+a{
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+a:link, a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: black;
+    background-color: orange;
+}
+
+#content{
+    display:inline-table;
+}
+
+#a{
+    text-align: left;
+    margin-left: 40px;
+}
+
+#lesson{
+    margin-top: 100px;
+}
+
+#lessons{
+    display: none;
+}
+
+#button {
+    background-color:white;
+    border: none;
+    color: Black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#button:hover {
+    background-color:darkorange;
+    color:black;
+}
+
+
+#show img{
+      max-width: 550px;
+      max-height: 400px;
+    /* margin-left: 30%;
+    margin-top: 5%;  */
+}
+
+.mySlides img{
+    max-width: 100%;
+}
+
+#login{
+    margin-top: 15%;
+}
+
+#local{
+    text-align: center;
+    margin: 100px;
+}
+img{
+    position: absolute;
+    top: 0; bottom:0; left: 0; right:0;
+    margin: auto;
+}
+
+i{
+    font-size: 100px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+i:hover{
+    color: orange;
+}
+
+#option{
+    text-align: center;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+ #option,a{
+    padding: 10px;
+} 
+
+#buttons{
+    margin-top: 600px;
+}
+
+#lessTitle{
+    display: inline;
+    font-size: 24px;
+}
+
+#lessonButton{
+    font-size: 20px;
+}
+#lessonButton2{
+    font-size: 20px;
+    display: none;
+}
+#signup{
+    margin-top: 10%;
+}
+#username, #password, #firstname, #lastname, #button{
+    display: block;
+    margin: 10px 10px 10px 10px;
+    margin-left: 45%;
+}
+
+#specific{
+    display: none;
+}
+
+
+/* video cs */
+#video {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+#pContent{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+#ifr{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+#shutdown{
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    #shutdown:hover,
+    #shutdown:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+
+    #lsnButton{
+        background-color:white;
+        border: none;
+        color: Black;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 4px 2px;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        cursor: pointer;
+        min-width: 200px;
+        max-width: 200px;
+    }
+    #lsnButton:hover {
+        background-color:darkorange;
+        color:black;
+    }
+    
+    #map{
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+    }

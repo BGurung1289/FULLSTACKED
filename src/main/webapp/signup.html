@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title> MyBaller - SignUp </title>
+        <link href = "myBaller.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="script/signup.js"></script>
+    </head>
+    
+    <body>
+        <div id="title">
+        <h3 class="top"> MyBaller </h3>
+        </div>
+        <div id="menu" class="top">
+            <ul>
+                <li><a id="links" href = "index.html"> Home </a></li>
+                <li><a id="links" href = "lessons.html"> Lessons </a></li>
+                <li><a id="links" href = "local.html"> Local Court </a></li>
+                <li><a id="links" href = "login.html"> Login </a></li>
+            </ul>
+        </div>
+        
+        <div id="signUp">
+            <form action="http://localhost:8080/jboss-javaee-webapp/example/web/register" method="post">
+            <p> User Details </p>
+            <input type="text" id="username" placeholder="Username" name="username">
+            <input type="password" id="password" placeholder="Password" name="password">
+            <input type="text" id="firstName" placeholder="FirstName" name="firstName">
+            <input type="text" id="lastName" placeholder="LastName" name="lastName">
+            
+            <p> Local Court </p>
+            <input type="text" id="postcode" placeholder="Postcode" name="postcode">
+            <input type="text" id="street" placeholder="Street" name="street">
+            <input type="text" id="city" placeholder="City" name="city">
+            <input type="text" id="country" placeholder="Country" name="country">
+            <input type="submit" id="button" value="Signup">
+            </form>
+        </div>
+    
+    </body>
+</html>
