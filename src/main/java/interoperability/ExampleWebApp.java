@@ -67,15 +67,47 @@ public class ExampleWebApp {
 		database.addUser(newUser, bballC.getCourtID()); 
 	}
 	
+	
 	@POST
+	@Produces("Application/json")
 	@Path("/login")
-	@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
-	public String login() {
+	public String login(JSONObject obj) {
 		JSONObject result = new JSONObject();
-		
-		
-		return result.toString();
+		String usern = obj.getString("username");
+		User retrieved = database.getUser(usern);
+		if(retrieved.getPass().equals(obj.get("password"))) {
+			result.put("result", "Login Successful");
+			result.put("username", retrieved.getUserName());
+			return result.toString();
+		}
+		else {
+			result.put("result", "Login Unsuccessful");
+			return result.toString();
+		}
 	}
+	
+	
+//	@POST
+//	@Path("/login")
+//	@Produces("Application/json")
+//	@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+//	public String checkUser(
+//		@FormParam("username") String name,
+//		@FormParam("password") String passw) {
+//		User retrieved = database.getUser(name);
+//		JSONObject ob = new JSONObject();
+//		
+//		if(retrieved.getPass().equals(passw)){
+//			ob.put("result", 1);
+//			ob.put("user", retrieved.getUserName());
+//			return ob.toString();
+//		}
+//		else{
+//			ob.put("result", 0);
+//			return ob.toString();
+//		}
+//		
+//	}
 	
 	
 }
